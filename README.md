@@ -1,5 +1,5 @@
 # PixabayImageSearchSample
-SwiftUI + Pixabay API + Codable + sync/async  Sample
+SwiftUI + LazyVGrid + Pixabay API + Codable + sync/async  Sample
 
 ## Getting Started
 create Constants.swift like this.
