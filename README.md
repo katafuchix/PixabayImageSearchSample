@@ -15,7 +15,7 @@ https://pixabay.com/
 ### Screen capture
 
 <div>
-<img src="https://user-images.githubusercontent.com/6063541/147813014-b65e2e5e-aa41-4051-a422-5de72b836973.png" width="250">
-<img src="https://user-images.githubusercontent.com/6063541/147813023-5fb771ba-b7e2-42a1-9825-6bcaf9bcaf0d.png" width="250">
-<img src="https://user-images.githubusercontent.com/6063541/147813027-d0a02bf1-d05f-4d94-8ead-f40cb9b40dae.png" width="250">
+<img width="250" alt="スクリーンショット 2021-12-31 17 46 33" src="https://user-images.githubusercontent.com/6063541/147813180-2b6c1ff6-7604-4464-8ae9-d2ff6cfbe802.png">
+<img width="250" alt="スクリーンショット 2021-12-31 17 46 43" src="https://user-images.githubusercontent.com/6063541/147813185-611f8653-afee-4566-b0df-2631422f56d6.png">
+<img width="250" alt="スクリーンショット 2021-12-31 17 46 49" src="https://user-images.githubusercontent.com/6063541/147813187-2953bc2a-72e2-40fd-8c7f-6672ed9466bf.png">
 </div>
