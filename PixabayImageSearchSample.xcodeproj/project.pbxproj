@@ -11,6 +11,10 @@
 		317079BB277ECC4600C9F5F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317079BA277ECC4600C9F5F4 /* ContentView.swift */; };
 		317079BD277ECC4700C9F5F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317079BC277ECC4700C9F5F4 /* Assets.xcassets */; };
 		317079C0277ECC4700C9F5F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317079BF277ECC4700C9F5F4 /* Preview Assets.xcassets */; };
+		31FA8C33277EEE8F00A6B2C5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA8C32277EEE8F00A6B2C5 /* ImageLoader.swift */; };
+		31FA8C38277EEE9700A6B2C5 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA8C35277EEE9700A6B2C5 /* ImageData.swift */; };
+		31FA8C39277EEE9700A6B2C5 /* UIApplication+extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA8C37277EEE9700A6B2C5 /* UIApplication+extended.swift */; };
+		31FA8C3B277EEE9F00A6B2C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA8C3A277EEE9F00A6B2C5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		317079BA277ECC4600C9F5F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		317079BC277ECC4700C9F5F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317079BF277ECC4700C9F5F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31FA8C32277EEE8F00A6B2C5 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		31FA8C35277EEE9700A6B2C5 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		31FA8C37277EEE9700A6B2C5 /* UIApplication+extended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+extended.swift"; sourceTree = "<group>"; };
+		31FA8C3A277EEE9F00A6B2C5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,12 @@
 		317079B7277ECC4600C9F5F4 /* PixabayImageSearchSample */ = {
 			isa = PBXGroup;
 			children = (
+				31FA8C36277EEE9700A6B2C5 /* Extension */,
+				31FA8C34277EEE9700A6B2C5 /* Model */,
+				31FA8C31277EEE8F00A6B2C5 /* Util */,
 				317079B8277ECC4600C9F5F4 /* PixabayImageSearchSampleApp.swift */,
 				317079BA277ECC4600C9F5F4 /* ContentView.swift */,
+				31FA8C3A277EEE9F00A6B2C5 /* Constants.swift */,
 				317079BC277ECC4700C9F5F4 /* Assets.xcassets */,
 				317079BE277ECC4700C9F5F4 /* Preview Content */,
 			);
@@ -65,6 +77,30 @@
 				317079BF277ECC4700C9F5F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31FA8C31277EEE8F00A6B2C5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				31FA8C32277EEE8F00A6B2C5 /* ImageLoader.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		31FA8C34277EEE9700A6B2C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31FA8C35277EEE9700A6B2C5 /* ImageData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31FA8C36277EEE9700A6B2C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				31FA8C37277EEE9700A6B2C5 /* UIApplication+extended.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +175,10 @@
 			files = (
 				317079BB277ECC4600C9F5F4 /* ContentView.swift in Sources */,
 				317079B9277ECC4600C9F5F4 /* PixabayImageSearchSampleApp.swift in Sources */,
+				31FA8C39277EEE9700A6B2C5 /* UIApplication+extended.swift in Sources */,
+				31FA8C33277EEE8F00A6B2C5 /* ImageLoader.swift in Sources */,
+				31FA8C38277EEE9700A6B2C5 /* ImageData.swift in Sources */,
+				31FA8C3B277EEE9F00A6B2C5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
