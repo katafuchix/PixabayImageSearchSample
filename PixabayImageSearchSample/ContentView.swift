@@ -17,30 +17,38 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            
-            TextField("検索キーワード",text: $text, onEditingChanged: { editing in })
-            .onChange(of: text) {
-                buttonEnabled = $0.count >= 2  // 2文字以上でボタン押下可能
-            }
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-
-            .padding([.top, .leading, .trailing], 40.0)
-             
-            Spacer()
-            
-            Button(action: {
-                UIApplication.shared.endEditing() // キーボードを下げる
-                Task {
-                    do {
-                        // 画像検索
-                        try await imageLoader.searchImages(text)
-                    } catch {
-                        print(error)
-                    }
+            ZStack {
+                Color.gray.opacity(0.6)
+                HStack {
+                    TextField("検索キーワード",text: $text, onEditingChanged: { editing in })
+                        .onChange(of: text) {
+                            buttonEnabled = $0.count >= 2  // 2文字以上でボタン押下可能
+                        }
+                        .padding([.leading, .trailing], 8)
+                        .frame(height: 32)
+                        .background(Color.white.opacity(0.4))
+                        .cornerRadius(8)
+                    
+                    Button(
+                        action: {
+                            UIApplication.shared.endEditing() // キーボードを下げる
+                            Task {
+                                do {
+                                    // 画像検索
+                                    try await imageLoader.searchImages(text)
+                                } catch {
+                                    print(error)
+                                }
+                            }
+                        }
+                        ,label:{ Text("Search") }
+                    )
+                    .foregroundColor(Color.black)
+                    .disabled(!buttonEnabled)
                 }
-            }) {
-                Text ("Search")
-            }.disabled(!buttonEnabled)
+                .padding([.leading, .trailing], 16)
+            }
+            .frame(height: 64)
              
             Spacer()
             
